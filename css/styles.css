@@ -699,8 +699,8 @@ transition: var(--transition-duration);
     width: 30px;
     height: 30px;
     position: relative;
-    left: 90%;
-    top: 24px;
+    left: 93%;
+    top: 0;
     border-radius: 50%;
     padding: 3px;
     transition: var(--transition-duration);
@@ -727,3 +727,118 @@ transition: var(--transition-duration);
 .modal.is-hidden .modal-content{
     transform: translateY(-20px);
 }
+
+
+
+
+
+
+.modal-content{
+    padding: 24px;
+}
+
+.user-contact label{
+    display: block;
+    margin-top: 8px;
+    color: var(--LIGHT-SLATE, #8E8F99);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.48px;
+}
+
+.user-contact input{
+    margin-top: 4px;
+    padding: 8px 16px;
+    border-radius: 4px;
+border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+}
+
+.user-contact-box {
+    display: block;
+    width: 100%;
+}
+
+.user-contact{
+    margin-top: 16px;
+}
+
+.user-contact-checkbox{
+    display: flex;
+    margin-top: 16px;
+    color: var(--LIGHT-SLATE, #8E8F99);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.48px;
+}
+
+.checkbox-icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    stroke-width: 1px;
+stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+}
+
+.user-contact textarea{
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    resize: vertical;
+    padding: 8px 16px;
+    border-radius: 4px;
+border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+}
+
+.user-contact-heading{
+    color: var(--NAVY-BLUE, #2E2F42);
+text-align: center;
+margin-top: 24px;
+
+/* Body Medium */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: 0.32px;
+}
+
+
+.submit-button{
+    padding: 16px 32px;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--WHITE, #FFF);
+text-align: center;
+/* Button Text */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: 0.64px;
+}
+
+.submit-button{
+   margin: 24px 120px 0 120px;
+}
+
+.privacy-link{
+    color: var(--iris);
+    text-decoration: underline;
+    
+}
+
+.contact-icon{
+    fill: var(--lightslate);
+}
+
+
+

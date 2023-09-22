@@ -824,6 +824,17 @@ line-height: 14px; /* 116.667% */
 letter-spacing: 0.48px;
 }
 
+.user-contact-textarea{
+    color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+/* Small Text */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.48px;
+}
+
 .user-contact input{
     margin-top: 4px;
     padding: 8px 16px;
@@ -949,13 +960,25 @@ letter-spacing: 0.64px;
 
 .contact-icon{
     fill: var(--navyblue);
-    position: absolute;
     width: 18px;
     height: 24px;
-    left: 39%;
-    transform: translateY(-132%);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-container{
+    position: relative;
+}
+
+.form-group{
+    align-items: center;
+    justify-content: center;
+    position:relative;
     
 }
+
 
 .contact-icon-checkbox{
     position: absolute;
@@ -970,7 +993,7 @@ letter-spacing: 0.64px;
     outline: 0;
 }
 
-.user-contact input:focus + svg{
+.user-contact .input-container:focus + svg{
     fill: var(--iris);
 }
 

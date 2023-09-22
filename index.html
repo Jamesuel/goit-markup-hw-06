@@ -212,6 +212,20 @@
                 </ul>
             </div>
 
+            <form action="" class="footer-form">
+                <div class="subscribe-footer">
+                    <h2 class="social-media-footer">Subscribe</h2>
+                    <label class="email-footer">
+                        <input class="email-user-box" type="email" name="email" placeholder="E-mail">
+                    </label>
+                </div>
+                <div class="subscribe-button-footer">
+                    <button class="subscribe-button"  type="submit">Subscribe
+                    <svg class="subscribe-icon" width="24px" height="24px" ><use href="./icons.svg#subscribe"></use></svg>
+                    </button>
+                </div>
+            </form>
+
         </div>        
 
     </footer>
@@ -226,34 +240,35 @@
             <form class="user-contact">
                 
                 <label class="user-contact-label">
-                    Name
-                    <svg class="contact-icon" width="16" height="16"><use href="./icons.svg#name"></use></svg> 
+                    Name                     
                     <input class="user-contact-box" type="text" placeholder="" name="full-name">
+                    <svg class="contact-icon" ><use href="./icons.svg#name"></use></svg>
                 </label>
 
                 <label class="user-contact-label">
-                    Telephone
-                    <svg class="contact-icon" width="16" height="16"><use href="./icons.svg#tel"></use></svg> 
+                    Telephone                     
                     <input class="user-contact-box" type="tel" name="phone">
+                    <svg class="contact-icon" ><use href="./icons.svg#tel"></use></svg>
                 </label>
 
                 <label class="user-contact-label">
                     E-mail 
-                    <svg class="contact-icon" width="16" height="16"><use href="./icons.svg#email"></use></svg>
                     <input class="user-contact-box" type="email" name="email">
+                    <svg class="contact-icon" ><use href="./icons.svg#email"></use></svg>
                 </label>
 
                 <label class="user-comment">
                     Comments
-                    <textarea name="comments" rows="7" placeholder="Text Input"></textarea>
+                    <textarea class="user-contact-textarea" name="comments" rows="7" placeholder="Text Input"></textarea>
                 </label>
 
                 <label class="user-contact-checkbox"> 
                     <input class="checkbox-icon" type="checkbox" name="agree">
-                    I accept the terms and conditions of the <span class="privacy-link">Privacy Policy</span>
+                    I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Policy</a>
+                    <svg class="contact-icon-checkbox" width="16" height="16"><use href="./icons.svg#check-box"></use></svg>
                 </label>
 
-                <button class="submit-button"  type="submit">Send</button>
+                <div class="submit-button-group"><button class="submit-button" type="submit">Send</button></div>
 
             </form>
             

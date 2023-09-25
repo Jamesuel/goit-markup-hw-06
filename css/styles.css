@@ -764,7 +764,7 @@ transition: var(--transition-duration);
     transition: var(--transition-duration);
 }
 
-.modal-content{
+.modal-content{ 
     width: 408px;
     margin: auto;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -772,21 +772,20 @@ transition: var(--transition-duration);
     background: var(--DAIRY, #FCFCFC);
     transform: none;
     transition: transform var(--transition-duration);
+    position: relative;
 }
 
 .modal-close{
-    align-items: center;
-    justify-content: center;
     background-color: var(--cornflower);
-    width: 30px;
-    height: 30px;
-    position: relative;
-    left: 93%;
-    top: 0;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    padding: 3px;
     transition: var(--transition-duration);
     color: var(--navyblue);
+    border: 1px solid var(--navyblue);
+    position: absolute;
+    right: 24px;
+    top: 24px;
 }
 
 .close-button-icon{
@@ -816,7 +815,7 @@ transition: var(--transition-duration);
 
 
 .modal-content{
-    padding: 24px;
+    padding: 72px 24px 24px;
 }
 
 label .user-contact-label{
@@ -836,6 +835,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 14px; /* 116.667% */
 letter-spacing: 0.48px;
+position: relative;
 }
 
 .user-comment{
@@ -932,7 +932,6 @@ border: 1px solid var(--navyblue, rgba(46, 47, 66, 0.40));
 .user-contact-heading{
     color: var(--NAVY-BLUE, #2E2F42);
 text-align: center;
-margin-top: 24px;
 
 /* Body Medium */
 font-family: Roboto;
@@ -992,7 +991,7 @@ letter-spacing: 0.64px;
     width: 18px;
     height: 24px;
     position: absolute;
-    left: 39%;
+    left: 16px;
     transform: translateY(-135%);
 }
 
@@ -1007,7 +1006,7 @@ letter-spacing: 0.64px;
     
 }
 
-.user-contact input:focus + svg{
+.user-contact input:focus + .contact-icon, .user-contact input:hover + .contact-icon{
     fill: var(--iris);
 }
 
@@ -1029,7 +1028,8 @@ letter-spacing: 0.64px;
 
 
 .user-contact-box:focus,
-.user-contact-textarea:focus{
+.user-contact-textarea:focus, .user-contact-box:hover,
+.user-contact-textarea:hover{
     border-color: var(--iris);
     outline: 0;
 }
